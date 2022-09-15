@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<mata charset="utf-8">
+	<mata name="viewport" content="width=device-width, initial-scale=1">
+	<title>slide show</title>
+	<style type="text/css">
+		h1 {
+			background-color: forestgreen;
+			color: white;
+			padding: 10px 20px;
+		}
+	</style>
+</head>
+<body>
+	<h1 id="title">slide show</h1>
+	<img id="gazo" src="neko.jpg">
+
+	<script type='text/javascript'>
+		//id:titleの部分クリック処理
+		const title = document.getElementById('title')
+		title.onmouseover = function() {
+			title.style.backgroundColor = 'tomato'
+
+			console.log( title.style.backgroundColor )
+		}
+		title.onmouseout = function() {
+			title.style.backgroundColor = 'forestgreen'
+		}
+
+		const gazo = document.getElementById('gazo')
+		gazo.onmouseover = function() {
+			gazo.width = 200
+		}
+		gazo.onmouseout = function() {
+			gazo.width = 500
+		}
+
+	</script>
+</body>
+</html>
